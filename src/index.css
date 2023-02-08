@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .link-underline {
+    background-image: linear-gradient(#d1d5db, #d1d5db);
+    background-size: 0 2px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease-in-out;
+  }
+
+  .link-underline:hover {
+    background-size: 100% 2px;
+    background-position: 0 100%;
+  }
+}
