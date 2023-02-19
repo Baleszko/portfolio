@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Technology from "./components/Technology";
 import Projects from "./components/Projects";
+import CV from "./components/CV";
 
 function App() {
   const [navSize, setnavSize] = useState("h-48");
@@ -59,7 +60,7 @@ function App() {
       </div>
       <Technology></Technology>
       <Projects></Projects>
-      {/* <div className="h-96"></div> */}
+      <CV></CV>
     </div>
   );
 }

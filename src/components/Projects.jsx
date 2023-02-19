@@ -17,6 +17,8 @@ function Projects() {
               radius="rounded-3xl"
               text="Weboldal"
               fontSize="text-2xl"
+              link="https://baleszko.github.io/anime-site/"
+              fontColor="opacity-0 group-hover:opacity-100"
             ></Button>
             <Button
               height="w-52"
@@ -25,6 +27,8 @@ function Projects() {
               radius="rounded-3xl"
               text="Github"
               fontSize="text-2xl"
+              link="https://github.com/Baleszko/anime-site"
+              fontColor="opacity-0 group-hover:opacity-100"
             ></Button>
           </div>
         </div>
