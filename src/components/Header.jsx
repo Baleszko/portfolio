@@ -35,7 +35,7 @@ function Header({ navSize, navColor }) {
           </a>
         </li>
         <li>
-          <a href="#kezdőlap" className=" pb-2 link-underline">
+          <a href="#contact" className=" pb-2 link-underline">
             <span className="link-underline link-underline-black"></span>
             kapcsolat
           </a>
