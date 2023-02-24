@@ -25,6 +25,7 @@ function Projects() {
               fontSize="text-xl lg:text-2xl"
               link="https://baleszko.github.io/anime-site/"
               fontColor="text-gray-100 2xl:text-gray-900 2xl:opacity-0 2xl:group-hover:opacity-100"
+              download={false}
             ></Button>
             <Button
               height="w-36 lg:w-52"
@@ -35,6 +36,7 @@ function Projects() {
               fontSize="text-xl lg:text-2xl"
               link="https://github.com/Baleszko/anime-site"
               fontColor="text-gray-100 2xl:text-gray-900 2xl:opacity-0 2xl:group-hover:opacity-100"
+              download={false}
             ></Button>
           </div>
         </div>
