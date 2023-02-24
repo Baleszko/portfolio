@@ -13,14 +13,25 @@ function Button({
     <div
       className={`${height} ${width} ${color} ${radius} ${fontSize} noSelect font-semibold  font-roboto-sans cursor-pointer hover:scale-110 transition-all`}
     >
-      <a
-        href={link}
-        target="_blank"
-        className="w-full h-full  flex  justify-center items-center "
-        download={download}
-      >
-        <p className={`${fontColor}`}>{text}</p>
-      </a>
+      {download ? (
+        <a
+          href={link}
+          target="_blank"
+          className="w-full h-full  flex  justify-center items-center "
+          download={download}
+        >
+          <p className={`${fontColor}`}>{text}</p>
+        </a>
+      ) : (
+        <a
+          href={link}
+          target="_blank"
+          className="w-full h-full  flex  justify-center items-center "
+        >
+          {" "}
+          <p className={`${fontColor}`}>{text}</p>
+        </a>
+      )}
     </div>
   );
 }
