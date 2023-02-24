@@ -14,10 +14,10 @@ function Button({
       className={`${height} ${width} ${color} ${radius} ${fontSize} noSelect font-semibold  font-roboto-sans cursor-pointer hover:scale-110 transition-all`}
     >
       <a
-        href={`${link}`}
+        href={link}
         target="_blank"
         className="w-full h-full  flex  justify-center items-center "
-        download={`${download}`}
+        download={download}
       >
         <p className={`${fontColor}`}>{text}</p>
       </a>
