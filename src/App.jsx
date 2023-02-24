@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Technology from "./components/Technology";
 import Projects from "./components/Projects";
+import CV from "./components/CV";
+import Contact from "./components/Contact";
 
 function App() {
   const [navSize, setnavSize] = useState("h-48");
@@ -34,17 +36,23 @@ function App() {
     <div>
       <div
         id="kezdőlap"
-        className="bg-it-background h-screen w-full  text-gray-300"
+        className="bg-it-background bg-center lg:bg-left-top h-screen w-full  text-gray-200"
       >
         <div className="bg-slate-900 bg-opacity-90 w-full h-screen">
           <Header navSize={navSize} navColor={navColor}></Header>
           <main className="absolute left-20 top-96 ">
             <div>
-              <p data-aos="fade-right" className="lg:text-9xl font-roboto-mono">
+              <p
+                data-aos="fade-right"
+                className="text-4xl lg:text-9xl font-roboto-mono"
+              >
                 Tóth Bálint
               </p>
-              <p data-aos="fade-up" className="lg:text-7xl font-roboto-serif ">
-                Junior Frontend Fejlesztő
+              <p
+                data-aos="fade-up"
+                className="text-2xl lg:text-7xl font-roboto-serif "
+              >
+                Junior Fejlesztő
               </p>
             </div>
           </main>
@@ -52,14 +60,15 @@ function App() {
             className={`absolute bottom-6 w-full ${displayScroller} flex justify-center ${displayScrollerY} transition-all duration-500`}
           >
             <div className="w-8 h-16 border-2 rounded-full flex justify-center">
-              <div className=" w-4 h-4 mt-2 bg-gray-300 rounded-full animate-scroll"></div>
+              <div className=" w-4 h-4 mt-2 bg-gray-200 rounded-full animate-scroll"></div>
             </div>
           </div>
         </div>
       </div>
       <Technology></Technology>
       <Projects></Projects>
-      {/* <div className="h-96"></div> */}
+      <CV></CV>
+      <Contact></Contact>
     </div>
   );
 }

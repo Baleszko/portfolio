@@ -1,10 +1,25 @@
-function Button({ height, width, radius, color, text, link, fontSize }) {
+function Button({
+  height,
+  width,
+  radius,
+  color,
+  text,
+  link,
+  fontSize,
+  fontColor,
+  download,
+}) {
   return (
     <div
-      className={`${height} ${width} ${color} ${radius} ${fontSize} font-semibold flex justify-center items-center font-roboto-sans cursor-pointer hover:scale-110 transition-all`}
+      className={`${height} ${width} ${color} ${radius} ${fontSize} noSelect font-semibold  font-roboto-sans cursor-pointer hover:scale-110 transition-all`}
     >
-      <a href={`${link}`}>
-        <p className="opacity-0 group-hover:opacity-100">{text}</p>
+      <a
+        href={`${link}`}
+        target="_blank"
+        className="w-full h-full  flex  justify-center items-center "
+        download={`${download}`}
+      >
+        <p className={`${fontColor}`}>{text}</p>
       </a>
     </div>
   );

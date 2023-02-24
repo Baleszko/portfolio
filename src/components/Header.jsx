@@ -29,23 +29,31 @@ function Header({ navSize, navColor }) {
           </a>
         </li>
         <li>
-          <a href="#kezdőlap" className=" pb-2 link-underline">
+          <a href="#cv" className=" pb-2 link-underline">
             <span className="link-underline link-underline-black"></span>
             önéletrajz
           </a>
         </li>
         <li>
-          <a href="#kezdőlap" className=" pb-2 link-underline">
+          <a href="#contact" className=" pb-2 link-underline">
             <span className="link-underline link-underline-black"></span>
             kapcsolat
           </a>
         </li>
       </ul>
       <div data-aos="fade-down" className="absolute top-5 right-5 flex gap-5 ">
-        <a className="w-8 cursor-pointer">
+        <a
+          href="https://github.com/Baleszko"
+          target="_blank"
+          className="w-8 cursor-pointer"
+        >
           <img src={githubLogo}></img>
         </a>
-        <a className="w-8 cursor-pointer">
+        <a
+          href="https://www.linkedin.com/in/b%C3%A1lint-t%C3%B3th-561974266/"
+          target="_blank"
+          className="w-8 cursor-pointer"
+        >
           <img src={linkedinLogo}></img>
         </a>
       </div>
