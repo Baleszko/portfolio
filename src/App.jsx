@@ -13,16 +13,17 @@ function App() {
   const [displayScrollerY, setDisplayScrollerY] = useState("translate-y-0");
 
   const listenScrollEvent = () => {
-    window.scrollY > 1
-      ? setnavColor("2xl:bg-zinc-900")
-      : setnavColor("2xl:transparent");
-    window.scrollY > 1 ? setnavSize("2xl:h-20") : setnavSize("2xl:h-48");
-    window.scrollY > 1
-      ? setDisplayScroller("opacity-0")
-      : setDisplayScroller("opacity-100");
-    window.scrollY > 1
-      ? setDisplayScrollerY("translate-y-12")
-      : setDisplayScrollerY("translate-y-0");
+    if (window.scrollY > 1) {
+      setnavColor("2xl:bg-zinc-900");
+      setnavSize("2xl:h-20");
+      setDisplayScroller("opacity-0");
+      setDisplayScrollerY("translate-y-12");
+    } else {
+      setnavColor("2xl:transparent");
+      setnavSize("2xl:h-48");
+      setDisplayScroller("opacity-100");
+      setDisplayScrollerY("translate-y-0");
+    }
   };
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
